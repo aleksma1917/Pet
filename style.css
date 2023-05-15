@@ -1,0 +1,65 @@
+@keyframes Color {
+    0% {
+        box-shadow: 1px 1px 40px rgb(255, 251, 6);
+    }
+    50%{
+        box-shadow: 1px 1px 40px rgb(244, 132, 3);
+
+    }
+    100% {
+        box-shadow: 1px 1px 40px rgb(255, 251, 6);
+    }
+  }
+
+body{
+    margin-top:200px;
+    display: flex;
+    justify-content: center;
+    background-image: url(bg.jpg);
+    background-size:contain;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 450px;
+    border-radius: 19px;
+    overflow:hidden;
+    background-color: rgb(81, 171, 196);
+ 
+}
+
+img{
+   position: absolute;
+   max-width:100%;
+
+}
+
+button{
+    position: absolute;
+    background-color: rgb(91, 95, 215); 
+    margin-top: 385px;
+    margin-left:27%;
+    width: 140px;
+    border-radius: 8px;
+    color: #fff9f9;
+}
+.text{
+    position: absolute;
+    text-align: center;
+    margin-top: 245px;
+    padding: 0px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.card:hover{
+animation: Color 5s infinite;
+animation-iteration-count:infinite;
+}
+
+
+
+
+.card:hover{
+    animation: gradient 5s infinite;
+}
